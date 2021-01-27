@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /*font-family: 'PT Sans Narrow', sans-serif;*/
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background: url(/src/images/port_image.jpg) center center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+}

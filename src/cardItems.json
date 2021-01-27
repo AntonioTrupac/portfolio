@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Js Shopping Cart",
+    "description": "Personal web shop project in JavaScript",
+    "role": "Frontend web development",
+    "technologies": "HTML, CSS, Javascript",
+    "link": "jshoppingcartantonio.netlify.app",
+    "id": 1
+  },
+  {
+    "name": "Useful Commands",
+    "description": ".NET Core API for inputing git/npm/yarn commands",
+    "role": "Backend web development",
+    "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails",
+    "link": "https://github.com/AntonioTrupac/UsefulCommands",
+    "id": 2
+  },
+  {
+    "name": "Band Page",
+    "description": "Basic desktop blog page for a band",
+    "role": "Frontend web development",
+    "technologies": "HTML, CSS",
+    "link": "https://rhcpbandpagetest.netlify.app/",
+    "id": 3
+  },
+  {
+    "name": "Birthday counter",
+    "description": "Basic birthday counter page",
+    "role": "Frontend web development",
+    "technologies": "HTML, CSS, React",
+    "link": "https://yosupbirthday.netlify.app/",
+    "id": 4
+  }
+]
