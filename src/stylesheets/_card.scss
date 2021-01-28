@@ -1,0 +1,70 @@
+.card-items-container {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  background-color: #a1a1a4;
+  padding: 2em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  opacity: 75%;
+  font-size: 1.5vh;
+  border-radius: 10px;
+}
+
+.card-items-container:hover {
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+}
+
+.card-items-container:hover::after {
+  opacity: 1;
+}
+
+.card-items-container:hover .project__name {
+  color: #eeee56;
+}
+
+.card-items-container:hover .icon-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.icon-right {
+  position: absolute;
+  right: 2rem;
+  color: #eeee56;
+  opacity: 0;
+  transform: translateX(-1rem);
+  transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+}
+
+.project__name {
+  font-size: 2vh;
+  margin-bottom: .5em;
+  transition: color 0.15s ease-out;
+}
+
+.project__description {
+  font-size: 1.8vh;
+}
+
+.project__role {
+  font-size: 1.8vh;
+}
+
+.project__technologies {
+  font-size: 1.8vh;
+}
+
+
+div:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .icon-right {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+

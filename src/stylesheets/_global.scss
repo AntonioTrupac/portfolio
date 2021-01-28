@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /*font-family: 'PT Sans Narrow', sans-serif;*/
+  font-family: 'Quicksand', sans-serif;
+}
+
+.content {
+  background-image: url('../images/port_image.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+  overflow-x: hidden;
+
+  @media only screen and (max-width: 992px) {
+    min-height: 100vh;
+  }
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: auto;
+  }
+
+  body {
+    height: auto;
+  }
+}
