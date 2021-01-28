@@ -1,4 +1,5 @@
 .card-items-container {
+    background: url(/src/images/port_image.jpg) center center/cover no-repeat;
     position: relative;
     display: inline-block;
     border: 1px solid #ffffff;

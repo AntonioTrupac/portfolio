@@ -42,11 +42,29 @@ function ContactForm() {
         >
             {props => (
                 <Form>
-                    <h1>Contact me!</h1>
-                    <CustomTextInput label="Name" name="name" type="text" placeholder="Enter your name"/>
+                    <div className='form-container'>
+                        <div className='contact-info'>
+                            <div>
+                                <h2>Contact me!</h2>
+                                <ul className='info'>
+                                    <li>
+                                        <span><img src='../images/location.png' /></span>
+                                        <span>Donja Švarča 43 <br/>
+                                            Karlovac, Croatia <br/>
+                                            47000</span>
+                                    </li>
+                                    <li>
+                                        <span><img src='../images/mail.png' /></span>
+                                        <span>antonio.trupac@gmail.com</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    <CustomTextInput className='text-input' label="Name" name="name" type="text" placeholder="Enter your name"/>
                     <CustomTextInput label="Email" name="email" type="email" placeholder="Enter your email"/>
                     <CustomTextInput label="Message" name="message" type="text" placeholder="Message me"/>
                     <button type="submit">{props.isSubmitting ? 'Loading...' : 'Submit'}</button>
+                    </div>
                 </Form>
             )}
         </Formik>

@@ -1,30 +1,31 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  /*font-family: 'PT Sans Narrow', sans-serif;*/
-  font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /*font-family: 'PT Sans Narrow', sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
 }
 
-body {
-  background: url(/src/images/port_image.jpg) center center/cover no-repeat;
-  height: 100vh;
-  width: 100%;
-}
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 @media only screen and (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+    .container {
+        width: 1170px;
+    }
 }
+
 @media only screen and (max-width: 992px) {
-  .container {
-    width: auto;
-  }
+    .container {
+        width: auto;
+    }
+
+    body {
+        height: auto;
+    }
 }
