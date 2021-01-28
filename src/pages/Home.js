@@ -9,7 +9,7 @@ const Home = () => {
                 <div className='div-container'>
                     <h2 className='greeting'>Hi, I'm Antonio.</h2>
                     <h1 className='profession'>based in Karlovac, Croatia.</h1>
-                    <p className='paragraph'>Frontend developer who loves to code with his music on. <span>Currently working at <a
+                    <p className='paragraph'>Software developer who loves to code with his music on. <span>Currently working at <a
                         className='bit-class' href="https://bitlight.dev/">Bitlight</a>.</span>
                     </p>
                     <Link to='/about' className='link-class'><p className='learn-more'><a>Learn more</a><span

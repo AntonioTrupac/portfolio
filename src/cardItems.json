@@ -4,14 +4,14 @@
     "description": "Personal web shop project in JavaScript",
     "role": "Frontend web development",
     "technologies": "HTML, CSS, Javascript",
-    "link": "jshoppingcartantonio.netlify.app",
+    "link": "https://jshoppingcartantonio.netlify.app",
     "id": 1
   },
   {
     "name": "Useful Commands",
     "description": ".NET Core API for inputing git/npm/yarn commands",
     "role": "Backend web development",
-    "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails",
+    "technologies": ".NET Core, PostgreSQL",
     "link": "https://github.com/AntonioTrupac/UsefulCommands",
     "id": 2
   },
