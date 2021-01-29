@@ -1,5 +1,4 @@
 import React from 'react';
-import '../stylesheets/FormContact.css';
 import {Formik, useField, Form} from "formik";
 import * as Yup from 'yup';
 
@@ -48,13 +47,13 @@ function ContactForm() {
                                 <h2>Contact me!</h2>
                                 <ul className='info'>
                                     <li>
-                                        <span><img src='../images/location.png' /></span>
+                                        <span><img src='../images/location.png' alt='location'/></span>
                                         <span>Donja Švarča 43 <br/>
                                             Karlovac, Croatia <br/>
                                             47000</span>
                                     </li>
                                     <li>
-                                        <span><img src='../images/mail.png' /></span>
+                                        <span><img src='../images/mail.png' alt='mail'/></span>
                                         <span>antonio.trupac@gmail.com</span>
                                     </li>
                                 </ul>

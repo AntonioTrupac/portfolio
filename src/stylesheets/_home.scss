@@ -4,65 +4,61 @@
   justify-content: center;
   height: calc(100vh - 80px);
   color: #ffffff;
-}
 
-.greeting {
-  font-size: 5.5vh;
-  margin-bottom: 40px;
-}
+  &-greeting {
+    font-size: 5.5vh;
+    margin-bottom: 40px;
+  }
 
-.profession {
-  font-size: 7vh;
-  text-transform: capitalize;
-}
+  &-profession {
+    font-size: 7vh;
+    text-transform: capitalize;
+  }
 
-.paragraph {
-  font-size: 4vh;
-}
+  &-paragraph {
+    font-size: 4vh;
 
-p span {
-  display: block;
-  margin-top: 3px;
-}
+    & > span {
+      display: block;
+      margin-top: 3px;
+    }
 
-.bit-class, .bit-class:focus {
-  text-decoration: none;
-  color: #eeee56;
-  cursor: pointer;
-}
+    a, a:focus {
+      text-decoration: none;
+      color: #eeee56;
+      transition: all 0.2s ease-out;
+      cursor: pointer;
 
-.bit-class:hover {
-  color: #f5d539;
-  transition: all 0.2s ease-out;
-}
+      &:hover {
+        color: #efd22d;
+      }
+    }
+  }
 
-.link-class {
-  text-decoration: none;
-}
+  &-link {
+    text-decoration: none;
+    transition: all 0.2s ease-out;
 
-.learn-more {
-  display: flex;
-  justify-content: left;
-  margin-top: 20px;
-  font-size: 4vh;
-  color: #eeee56;
-  cursor: pointer;
-}
+    & p {
+      display: flex;
+      justify-content: left;
+      margin-top: 20px;
+      font-size: 4vh;
+      color: #eeee56;
+      cursor: pointer;
 
-.chevron-span {
-  padding-left: 5px;
-  font-weight: 400;
-}
 
-.fa {
-  font-size: 3.5vh;
-  font-weight: 550;
-}
+      & span {
+        padding-left: 5px;
+        font-weight: 400;
+      }
 
-@media only screen and (max-width: 576px) {
+    }
 
-  .div-container {
-    margin-left: 0;
+    .fa {
+      font-size: 3.2vh;
+      font-weight: 550;
+    }
   }
 
 }

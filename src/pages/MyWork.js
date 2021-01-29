@@ -1,5 +1,4 @@
 import React from 'react';
-import '../stylesheets/MyWork.css';
 import Card from '../components/card';
 
 const MyWork = () => {
