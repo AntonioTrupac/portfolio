@@ -55,27 +55,34 @@ function ContactForm() {
                 description: Yup.string().min(3, 'You must enter atleast 3 characters').required('Required')
             })}
             onSubmit={(values, actions) => {
-                    fetch("/", {
-                        method: "POST",
-                        headers: {"Content-Type": "application/x-www-form-urlencoded"},
-                        body: encode({
-                            "form-name": "formik",
-                            ...values
-                        })
+                fetch("/", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/x-www-form-urlencoded"},
+                    body: encode({
+                        "form-name": "formik",
+                        ...values
                     })
-                        .then(() => {
-                            alert('Success');
+                })
+                    .then((response) => {
+                        if (!response.ok) {
+                            throw new Error('response.status');
+                        } else if(response.ok){
+                            alert('success');
                             actions.resetForm();
-                        })
-                        .catch(() => {
-                            alert('Error');
-                        })
-                        .finally(() => actions.setSubmitting(false))
+                        } else {
+                            alert('Something went wrong');
+                        }
+                        return response;
+                    })
+                    .catch((error) => {
+                        alert(error);
+                    })
+                    .finally(() => actions.setSubmitting(false))
             }}
         >
             {props => (
                 <Form name="formik" data-netlify={true}>
-                    <input type="hidden" name="form-name" value="formik" />
+                    <input type="hidden" name="form-name" value="formik"/>
                     <div className='contact-form'>
                         <h1>Contact me!</h1>
                         <CustomTextInput className='input' label="Name" name="ime" type="text"
