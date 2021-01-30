@@ -55,8 +55,6 @@ function ContactForm() {
                 description: Yup.string().min(3, 'You must enter atleast 3 characters').required('Required')
             })}
             onSubmit={(values, actions) => {
-                setTimeout(() => {
-                    alert(JSON.stringify(values, null, 2));
                     fetch("/", {
                         method: "POST",
                         headers: {"Content-Type": "application/x-www-form-urlencoded"},
@@ -70,7 +68,6 @@ function ContactForm() {
                             alert('Error');
                         })
                         .finally(() => actions.setSubmitting(false))
-                }, 2000)
             }}
         >
             {props => (
