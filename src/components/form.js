@@ -43,12 +43,12 @@ function ContactForm() {
     return (
         <Formik
             initialValues={{
-                ime: '',
+                name: '',
                 email: '',
                 description: '',
             }}
             validationSchema={Yup.object({
-                ime: Yup.string().min(3, 'You must enter atleast 3 characters')
+                name: Yup.string().min(3, 'You must enter atleast 3 characters')
                     .max(15, 'You can enter only up to 15 characters')
                     .required('Required'),
                 email: Yup.string().email('Invalid email address').required('Required'),
@@ -85,7 +85,7 @@ function ContactForm() {
                     <input type="hidden" name="form-name" value="formik"/>
                     <div className='contact-form'>
                         <h1>Contact me!</h1>
-                        <CustomTextInput className='input' label="Name" name="ime" type="text"
+                        <CustomTextInput className='input' label="Name" name="name" type="text"
                                          placeholder="Enter your name" style={{fontSize: '20px'}}/>
                         <CustomTextInput className='input' label="Email" name="email" type="email"
                                          placeholder="Enter your email" style={{fontSize: '20px'}}/>
