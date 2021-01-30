@@ -1,7 +1,131 @@
-.form-container {
+.flex-div {
+  display: flex;
+  justify-content: center;
+}
+
+Form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 600px;
+  margin: 20px;
+  justify-items: center;
+  margin-top: 300px;
+
+  @media only screen and (max-width: 1800px) {
+    margin-top: 70px;
+    width: 400px;
+  }
+
+  h1 {
+    font-size: 3vh;
+    text-align: center;
+    color: white;
+    border: 2px white;
+  }
+
+  .input {
+    width: 100%;
+    padding: 30px 16px;
+    background-color: #edf2f7;
+    border: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+    border: 2px solid #a0aec0;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: 1800px) {
+      padding: 20px 16px;
+    }
+  }
+
+  .textarea {
+    width: 100%;
+    padding: 16px;
+    background-color: #edf2f7;
+    border: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+    border: 2px solid #a0aec0;
+    box-sizing: border-box;
+    height: 200px;
+
+    @media only screen and (max-width: 1800px) {
+      height: 150px;
+    }
+  }
+
+  & button {
+    background-color: #48bb78;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    padding: 16px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .error {
+    color: #48bb78;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+
+  .label {
+    font-size: 25px;
+    padding-bottom: 3px;
+    color: white;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-decoration: none;
+      margin: 0 10px;
+      background-color: white;
+      padding: 1rem;
+      color: black;
+      transition: color 0.15s ease-out, background-color 0.15s ease-out;
+      opacity: 80%;
+
+      @media only screen and (min-width: 1800px) {
+        margin: 0 20px;
+        padding: 20px 30px;
+
+        & .font {
+          font-size: 20px;
+        }
+
+      }
+
+      &:hover {
+        color: #020202;
+        background-color: #5bdd91;
+      }
+
+      .icon {
+        padding: 1.5px;
+        margin: 0 2px;
+        width: 20px;
+        height: 20px;
+
+        @media only screen and (min-width: 1800px) {
+          height: 30px;
+          width: 30px;
+        }
+
+      }
+    }
+  }
+
 }
+
+
+
+
 
