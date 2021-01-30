@@ -1,5 +1,5 @@
 import React from 'react';
-import cardItems from '../cardItems/cardItems.json';
+import Items from '../cardItems/items.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -15,7 +15,7 @@ function Card() {
     return (
         <>
             {
-                cardItems.map((cardItem) => {
+                Items.map((cardItem) => {
                     return (
                         <div key={cardItem.id} onClick={(e) => cardItem.link.length === 0 ? e.preventDefault() : openInNewTab(cardItem.link)} className='card-items-container'>
                             <h4 className="card_items__name">{cardItem.name}</h4>

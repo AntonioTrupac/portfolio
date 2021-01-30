@@ -1,5 +1,5 @@
 import React from 'react';
-import doggos from '../images/doggos.jpeg'
+import Doggos from '../images/doggos.jpg';
 
 const About = () => {
     return (
@@ -50,7 +50,7 @@ const About = () => {
                 </div>
 
                 <div className='picture-container'>
-                    <img src={doggos} alt="doggies"/>
+                    <img src={Doggos} alt="doggies"/>
                     <p>I love huskies and malamutes. As u can see I have 2 of them. Smaller one is called Bailey and bigger one is called Freya.</p>
                 </div>
             </div>
