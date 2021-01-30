@@ -33,7 +33,7 @@ const CustomTextArea = ({label, ...props}) => {
     )
 }
 
-const encode = (data) => {
+function encode(data) {
     return Object.keys(data)
         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
         .join("&");
@@ -58,7 +58,10 @@ function ContactForm() {
                     fetch("/", {
                         method: "POST",
                         headers: {"Content-Type": "application/x-www-form-urlencoded"},
-                        body: encode({"form-name": "contact", ...values})
+                        body: encode({
+                            "form-name": "formik",
+                            ...values
+                        })
                     })
                         .then(() => {
                             alert('Success');
@@ -71,7 +74,7 @@ function ContactForm() {
             }}
         >
             {props => (
-                <Form name="contact" data-netlify={true}>
+                <Form name="formik" data-netlify={true}>
                     <div className='contact-form'>
                         <h1>Contact me!</h1>
                         <CustomTextInput className='input' label="Name" name="name" type="text"
@@ -88,7 +91,7 @@ function ContactForm() {
                             <FontAwesomeIcon icon={faEnvelope} className='icon'/>
                             <span className='font'>Gmail</span>
                         </a>
-                        <a href='mailto: antonio.trupac@gmail.com'>
+                        <a href='https://github.com/AntonioTrupac?tab=repositories'>
                             <FontAwesomeIcon icon={faGithub} className='icon'/>
                             <span className='font'>Github</span>
                         </a>
