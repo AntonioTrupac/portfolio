@@ -3,7 +3,7 @@ import {Formik, useField, Form, Field} from "formik";
 import * as Yup from 'yup';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
-import {faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
+import { faGithub} from '@fortawesome/free-brands-svg-icons'
 
 const CustomTextInput = ({label, ...props}) => {
     const [field, meta] = useField(props);
@@ -31,6 +31,12 @@ const CustomTextArea = ({label, ...props}) => {
             ) : null}
         </div>
     )
+}
+
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
 }
 
 function ContactForm() {
