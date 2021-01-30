@@ -9,7 +9,7 @@
   },
   {
     "name": "Useful Commands",
-    "description": ".NET Core API for inputing git/npm/yarn commands",
+    "description": ".NET Core API for inputing commands",
     "role": "Backend web development",
     "technologies": ".NET Core, PostgreSQL",
     "link": "https://github.com/AntonioTrupac/UsefulCommands",
