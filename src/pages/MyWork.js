@@ -3,7 +3,7 @@ import Card from '../components/card';
 
 const MyWork = () => {
     return (
-        <>
+        <div>
             <div className='container'>
             <h2 className='header-class'>Projects that I worked on</h2>
             <div className='main-work-container'>
@@ -12,7 +12,7 @@ const MyWork = () => {
             </div>
             </div>
             </div>
-        </>
+        </div>
 
     );
 };

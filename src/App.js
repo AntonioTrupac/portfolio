@@ -1,3 +1,4 @@
+import React from 'react';
 import Navbar from './components/navbar/navbar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './stylesheets/app.scss';
@@ -11,19 +12,19 @@ import Home from "./pages/Home";
 
 function App() {
     return (
-        <>
+        <div>
             <Router>
                 <Navbar/>
                 <main className="content">
                     <Switch>
-                        <Route path='/' exact component={Home}/>
-                        <Route path='/about' exact component={About}/>
-                        <Route path='/my-work' component={MyWork}/>
-                        <Route path='/contact' component={Contact}/>
+                        <Route exact path='/' component={Home}/>
+                        <Route exact path='/about' component={About}/>
+                        <Route exact path='/my-work' component={MyWork}/>
+                        <Route exact path='/contact' component={Contact}/>
                     </Switch>
                 </main>
             </Router>
-        </>
+        </div>
     );
 }
 
