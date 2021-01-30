@@ -1,5 +1,5 @@
 import React from 'react';
-import cardItems from '../cardItems.json';
+import cardItems from '../cardItems/cardItems.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 
