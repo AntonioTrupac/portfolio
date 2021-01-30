@@ -75,6 +75,7 @@ function ContactForm() {
         >
             {props => (
                 <Form name="formik" data-netlify={true}>
+                    <input type="hidden" name="form-name" value="formik" />
                     <div className='contact-form'>
                         <h1>Contact me!</h1>
                         <CustomTextInput className='input' label="Name" name="ime" type="text"
