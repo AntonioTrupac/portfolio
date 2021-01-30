@@ -43,12 +43,12 @@ function ContactForm() {
     return (
         <Formik
             initialValues={{
-                name: '',
+                ime: '',
                 email: '',
                 description: '',
             }}
             validationSchema={Yup.object({
-                name: Yup.string().min(3, 'You must enter atleast 3 characters')
+                ime: Yup.string().min(3, 'You must enter atleast 3 characters')
                     .max(15, 'You can enter only up to 15 characters')
                     .required('Required'),
                 email: Yup.string().email('Invalid email address').required('Required'),
@@ -77,7 +77,7 @@ function ContactForm() {
                 <Form name="formik" data-netlify={true}>
                     <div className='contact-form'>
                         <h1>Contact me!</h1>
-                        <CustomTextInput className='input' label="Name" name="name" type="text"
+                        <CustomTextInput className='input' label="Name" name="ime" type="text"
                                          placeholder="Enter your name" style={{fontSize: '20px'}}/>
                         <CustomTextInput className='input' label="Email" name="email" type="email"
                                          placeholder="Enter your email" style={{fontSize: '20px'}}/>
