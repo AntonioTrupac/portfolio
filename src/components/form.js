@@ -65,7 +65,7 @@ function ContactForm() {
                 })
                     .then((response) => {
                         if (!response.ok) {
-                            throw new Error('response.status');
+                            throw new Error(response.status);
                         } else if(response.ok){
                             alert('success');
                             actions.resetForm();
