@@ -28,7 +28,7 @@
 
 @media only screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 80%;
   }
 }
 
@@ -39,11 +39,5 @@
 
   body {
     height: auto;
-  }
-}
-
-@media only screen and (min-width: 1920px) {
-  .container {
-    width: 2200px;
   }
 }

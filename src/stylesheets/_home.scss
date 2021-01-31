@@ -5,6 +5,12 @@
   height: calc(100vh - 80px);
   color: #ffffff;
 
+  @media only screen and (min-height: 1920px)  {
+    .container {
+      width: 1700px;
+    }
+  }
+
   &-greeting {
     font-size: 5.5vh;
     margin-bottom: 40px;
