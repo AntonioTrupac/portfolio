@@ -33,7 +33,9 @@ function Card() {
                             <div className="card_items_font">{cardItem.description}</div>
                             <div className="card_items_font">{cardItem.role}</div>
                             <div className="card_items_font">{cardItem.technologies}</div>
-                            <button>aaaa</button>
+                            <button onClick={(e) =>
+                                cardItem.link.length === 0 ? e.preventDefault() : openInNewTab(cardItem.link)}>
+                                <a href='https://bitlight.dev/' ></a>View source</button>
                             {cardItem.link.length === 0 ? '' : <FontAwesomeIcon className="icon icon-right"
                                                                                 icon={faLongArrowAltRight} /> }
                         </motion.div>
@@ -42,8 +44,7 @@ function Card() {
             }
         </>
     )
-
-
 }
-
+// onClick={(e) =>
+// cardItem.link.length === 0 ? e.preventDefault() : openInNewTab(cardItem.link)}
 export default Card;
