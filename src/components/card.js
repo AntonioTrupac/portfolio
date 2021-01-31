@@ -35,7 +35,7 @@ function Card() {
                             <div className="card_items_font">{cardItem.technologies}</div>
                             <button onClick={(e) =>
                                 cardItem.link.length === 0 ? e.preventDefault() : openInNewTab(cardItem.link)}>
-                                <a href='https://bitlight.dev/' ></a>View source</button>
+                                <a href="https://bitlight.dev/" >View source</a></button>
                             {cardItem.link.length === 0 ? '' : <FontAwesomeIcon className="icon icon-right"
                                                                                 icon={faLongArrowAltRight} /> }
                         </motion.div>
