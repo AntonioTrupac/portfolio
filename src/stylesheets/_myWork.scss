@@ -1,4 +1,4 @@
-.main-work-container{
+.main-work-container {
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -18,7 +18,6 @@
 }
 
 
-
 .header-class {
   margin-top: 100px;
   display: flex;
@@ -27,7 +26,8 @@
   font-size: 4vh;
 
   @media only screen and (max-width: 768px) {
-      font-size: 1.8rem;
+    margin-top: 20px;
+    font-size: 1.8rem;
   }
 }
 

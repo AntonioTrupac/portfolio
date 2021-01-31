@@ -14,9 +14,6 @@
   height: calc(100vh - 80px);
   overflow-x: hidden;
 
-  @media only screen and (max-width: 992px) {
-    min-height: 100vh;
-  }
 }
 
 .container {
@@ -26,9 +23,9 @@
   margin-left: auto;
 }
 
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1080px) {
   .container {
-    width: 80%;
+    width: 1920px;
   }
 }
 
@@ -39,5 +36,11 @@
 
   body {
     height: auto;
+  }
+}
+
+@media screen and (min-height: 1920px) {
+  .container {
+    width: 2200px;
   }
 }
