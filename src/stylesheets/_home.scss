@@ -17,10 +17,12 @@
 
   &-profession {
     font-size: 7vh;
+    white-space: nowrap;
     text-transform: capitalize;
 
     @media only screen and (max-width: 992px) {
       font-size: 40px;
+      white-space: normal;
     }
   }
 
