@@ -3,7 +3,7 @@ import Card from '../components/card';
 
 //motion
 import {motion} from 'framer-motion';
-import {fadeAbove, fadeRight} from "../Animation";
+import {fadeAbove} from "../Animation";
 
 const MyWork = () => {
     return (

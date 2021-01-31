@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 //motion
 import {motion} from 'framer-motion';
-import {fadeLeft, fadeRight} from "../Animation";
+import {fadeLeft} from "../Animation";
 
 const Home = () => {
     return (
