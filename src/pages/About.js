@@ -1,10 +1,19 @@
 import React from 'react';
 import Doggos from '../images/doggos.jpg';
 
+//motion
+import {motion} from 'framer-motion';
+import {fadeLeft} from "../Animation";
+
 const About = () => {
     return (
         <>
-            <div className='about container'>
+            <motion.div
+                variants={fadeLeft}
+                initial='hidden'
+                animate='visible'
+                transition={{duration: 0.7}}
+                className='about container'>
                 <div className='about-content'>
                     <div className='personal'>
                         <h1>About</h1>
@@ -34,7 +43,7 @@ const About = () => {
 
                         <div>
                             <h3>University</h3>
-                            <a href="https://vvg.hr/">University of Applied Sciences Velika Gorica</a>
+                            <a href="https://vvg.hr/" target='_blank' rel='noreferrer'>University of Applied Sciences Velika Gorica</a>
 
                             <ul className='uni-ul'>
                                 <li>
@@ -53,7 +62,7 @@ const About = () => {
                     <img src={Doggos} alt="doggies"/>
                     <p>I love huskies and malamutes. As u can see I have 2 of them. Smaller one is called Bailey and bigger one is called Freya.</p>
                 </div>
-            </div>
+            </motion.div>
         </>
     );
 };

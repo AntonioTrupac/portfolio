@@ -5,6 +5,11 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
 
+//motion
+import {motion} from 'framer-motion';
+import {fadeLeft, fadeRight, fadeAbove} from "../Animation";
+
+
 const CustomTextInput = ({label, ...props}) => {
     const [field, meta] = useField(props);
 
@@ -66,7 +71,7 @@ function ContactForm() {
                     .then((response) => {
                         if (!response.ok) {
                             throw new Error(response.status);
-                        } else if(response.ok){
+                        } else if (response.ok) {
                             alert('success');
                             actions.resetForm();
                         } else {
@@ -84,7 +89,12 @@ function ContactForm() {
                 <Form name="formik" data-netlify={true}>
                     <input type="hidden" name="form-name" value="formik"/>
                     <div className='contact-form'>
-                        <h1>Contact me!</h1>
+                        <motion.h1
+                            variants={fadeAbove}
+                            initial='hidden'
+                            animate='visible'
+                            transition={{duration: 0.7}}
+                        >Contact me!</motion.h1>
                         <CustomTextInput className='input' label="Name" name="name" type="text"
                                          placeholder="Enter your name" style={{fontSize: '20px'}}/>
                         <CustomTextInput className='input' label="Email" name="email" type="email"
@@ -92,17 +102,28 @@ function ContactForm() {
                         <CustomTextArea className='textarea' label="Description" name="description" type="textarea"
                                         placeholder="Message me" style={{fontSize: '20px'}}/>
                         <button style={{fontSize: '20px'}}
-                                type="submit">{props.isSubmitting ? 'Loading...' : 'Submit'}</button>
+                                       type="submit"
+                        >{props.isSubmitting ? 'Loading...' : 'Submit'}</button>
                     </div>
                     <div className='links'>
-                        <a href='mailto: antonio.trupac@gmail.com'>
+                        <motion.a
+                            variants={fadeLeft}
+                            initial='hidden'
+                            animate='visible'
+                            transition={{duration: 0.7}}
+                            href='mailto: antonio.trupac@gmail.com' target='_blank' rel='noreferrer'>
                             <FontAwesomeIcon icon={faEnvelope} className='icon'/>
                             <span className='font'>Gmail</span>
-                        </a>
-                        <a href='https://github.com/AntonioTrupac?tab=repositories'>
+                        </motion.a>
+                        <motion.a
+                            variants={fadeRight}
+                            initial='hidden'
+                            animate='visible'
+                            transition={{duration: 0.7}}
+                            href='https://github.com/AntonioTrupac?tab=repositories' target='_blank' rel='noreferrer'>
                             <FontAwesomeIcon icon={faGithub} className='icon'/>
                             <span className='font'>Github</span>
-                        </a>
+                        </motion.a>
                     </div>
                 </Form>
             )}
