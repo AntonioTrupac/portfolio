@@ -34,5 +34,14 @@
     "link": "https://yosupbirthday.netlify.app/",
     "sourceLink": "https://github.com/AntonioTrupac/birthdayRepo",
     "id": 4
+  },
+  {
+    "name": "Portfolio",
+    "description": "Personal portfolio",
+    "role": "Frontend web development",
+    "technologies": "HTML, SCSS, React",
+    "link": "https://antoniotrupac-portfolio.netlify.app/",
+    "sourceLink": "https://github.com/AntonioTrupac/portfolio",
+    "id": 5
   }
 ]
