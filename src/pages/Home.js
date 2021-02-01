@@ -16,7 +16,7 @@ const Home = () => {
                             transition={{duration: 0.7}}>
                     <h2 className='homepage-greeting'>Hi, I'm Antonio.</h2>
                     <h1 className='homepage-profession'>based in Karlovac, Croatia.</h1>
-                    <p className='homepage-paragraph'>Software developer who loves to code with his music on. <span>Currently working at <a
+                    <p className='homepage-paragraph'>Web developer who loves to code with his music on. <span>Currently working at <a
                         href="https://bitlight.dev/">Bitlight</a>.</span>
                     </p>
                     <Link to='/about' className='homepage-link'><p><a href>Learn more</a><span
